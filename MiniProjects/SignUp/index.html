@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form " id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form_mess form_mess--error"></div>
+            <div class="form_input-group">
+                <input type="text" placeholder="Username or email" class="form_input" autofocus>
+                <div class="form_input-error-mess"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" placeholder="Password" class="form_input" autofocus>
+                <div class="form_input-error-mess"></div>
+            </div>
+            <button class="form_button" type="submit">Continue</button>
+            <p class="form_text">
+                <a href="#" class="form_link">Forgot you Password?</a>
+            </p>
+            <p class="form_text">
+                <a href="./" id="linkCreateAccount" class="form_link">Don't have an account? Create account</a>
+            </p>
+        </form>
+
+        <form class="form from--hidden" id="createAccount">
+            <h1 class="form_title">Create Account</h1>
+            <div class="form_mess form_mess--error"></div>
+            <div class="form_input-group">
+                <input type="text" id="signupUsername" placeholder="Username" class="form_input" autofocus>
+                <div class="form_input-error-mess"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="text" placeholder="Email Address" class="form_input" autofocus>
+                <div class="form_input-error-mess"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" placeholder="Password" class="form_input" autofocus>
+                <div class="form_input-error-mess"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" placeholder="Confirm Password" class="form_input" autofocus>
+                <div class="form_input-error-mess"></div>
+            </div>
+            <button class="form_button" type="submit">Continue</button>
+            <p class="form_text">
+                <a href="./" id="linkLogin" class="form_link">Already have an account? Log In</a>
+            </p>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
